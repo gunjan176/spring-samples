@@ -47,10 +47,9 @@
   </dependencyManagement>
   
   <scm>
-    <developerConnection>scm:git:git@github.com/gunjan176/spring-samples.git</developerConnection>
-	<connection>scm:git:git://github.com/gunjan176/spring-samples.git</connection>
-	<url>http://github.com/gunjan176/spring-samples</url>	</scm>
-	<build>
+    <developerConnection>scm:git://github.com/gunjan176/spring-samples</developerConnection>  </scm>
+  
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

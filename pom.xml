@@ -46,7 +46,7 @@
   </dependencyManagement>
   
   <scm>
-    <developerConnection>scm:git://github.com/gunjan176/spring-samples</developerConnection>    <tag>spring-examples-0.0.1</tag>
+    <developerConnection>scm:git://github.com/gunjan176/spring-samples</developerConnection>  <tag>spring-examples-0.0.1</tag>
   </scm>
   
   <build>

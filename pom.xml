@@ -57,7 +57,8 @@
         <version>2.5.1</version>
 		<configuration>
           <tagNameFormat>v@{project.version}</tagNameFormat>
-        </configuration>
+          <releaseProfiles>release</releaseProfiles>
+		</configuration>
       </plugin>
     </plugins>
   </build>

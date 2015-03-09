@@ -4,7 +4,7 @@
 
   <groupId>com.sanchii.java.spring</groupId>
   <artifactId>spring-examples</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>spring-examples</name>
@@ -47,7 +47,7 @@
   </dependencyManagement>
   
   <scm>
-    <developerConnection>scm:git:https://github.com/gunjan176/spring-samples</developerConnection>    <tag>spring-examples-0.0.3</tag>
+    <developerConnection>scm:git:https://github.com/gunjan176/spring-samples</developerConnection>    <tag>HEAD</tag>
   </scm>
   
   <build>

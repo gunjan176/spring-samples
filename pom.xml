@@ -16,7 +16,12 @@
      <spring.version>3.0.5.RELEASE</spring.version>
 	 <local.repository>file://c:/work/install/maven/repo</local.repository>
   </properties>
-
+ <distributionManagement>
+  	<repository>
+		<id>myid</id>
+		<url>${local.repository}</url>
+	</repository>
+ </distributionManagement>
   <dependencyManagement>
   	<dependencies>
   	    <dependency>

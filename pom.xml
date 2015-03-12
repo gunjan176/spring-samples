@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sanchii.java.spring</groupId>
   <artifactId>spring-examples</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>spring-examples</name>
@@ -15,6 +15,7 @@
      <JUNIT_VERSION>3.8.1</JUNIT_VERSION>
      <SPRING_VERSION>2.5.6</SPRING_VERSION>
      <spring.version>3.0.5.RELEASE</spring.version>
+	 <local.repository>file://c:/work/install/maven/repo</local.repository>
   </properties>
 
   <dependencyManagement>
@@ -47,8 +48,7 @@
   </dependencyManagement>
   
   <scm>
-    <developerConnection>scm:git:https://github.com/gunjan176/spring-samples</developerConnection>    <tag>HEAD</tag>
-  </scm>
+    <developerConnection>scm:git:https://github.com/gunjan176/spring-samples</developerConnection>  </scm>
   
   <build>
     <plugins>
@@ -63,7 +63,7 @@
   
   
   <modules>
-  	<module>00_helloworld_3x</module>
-    <module>00_helloworld_2_5x</module>
+  	<module>00_helloworld_2_5x</module>
+	<module>00_helloworld_3x</module>
   </modules>
 </project>

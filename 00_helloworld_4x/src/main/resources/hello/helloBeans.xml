@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 	
+ 	<import resource="helloBeansServiceLocator.xml" />
+ 	
+	<bean id="helloBean" class="com.sanchii.java.spring.hellowworld.bean.HelloWorld">
+		<property name="name" value="John Doe" />
+	</bean>
+	<!-- 
+		When defining a bean that you create with a static factory method, 
+		you use the class attribute to specify the class containing the static factory method and an 
+		attribute named factory-method to specify the name of the factory method itself.
+	 -->
+	<bean id="helloBeanFactory" factory-method="instatiate" class="com.sanchii.java.spring.hellowworld.bean.HelloWorldWithFactoryMethod">
+		<property name="name" value="Doe John" />
+	</bean>
+	
+	<bean id="helloBeanMethodFactory" factory-bean="helloBeanServiceLocator" factory-method="instatiate" class="com.sanchii.java.spring.hellowworld.bean.HelloWorldWithFactoryBeanFactoryMethod">
+		<property name="name" value="St Pauls" />
+	</bean>
+</beans>	

@@ -21,7 +21,7 @@ public class HelloWorldService {
 		
 	}
 	
-	public static HelloWorldWithFactoryBeanFactoryMethod instatiate()
+	public HelloWorldWithFactoryBeanFactoryMethod instatiate()
 	{
 		System.out.println("Instatiating HelloWorldWithFactoryBeanFactoryMethod through Factory Method in HelloWorldService");
 

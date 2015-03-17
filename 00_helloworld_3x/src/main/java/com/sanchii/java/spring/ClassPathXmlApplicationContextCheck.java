@@ -7,7 +7,7 @@ import com.sanchii.java.spring.hellowworld.bean.HelloWorld;
 
 /**
  * This class checks the ClassPathXmlApplicationContext class to load the spring beans into memory.
- * 
+ * The 
  * Hello world!
  *
  */

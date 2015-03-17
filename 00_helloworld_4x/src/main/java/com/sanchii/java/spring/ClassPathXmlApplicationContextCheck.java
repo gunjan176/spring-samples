@@ -1,8 +1,11 @@
 package com.sanchii.java.spring;
 
+import java.util.Map;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.sanchii.java.spring.dependency.injection.bean.SimpleBookLister;
 import com.sanchii.java.spring.hellowworld.bean.HelloWorld;
 import com.sanchii.java.spring.hellowworld.bean.HelloWorldWithFactoryBeanFactoryMethod;
 import com.sanchii.java.spring.hellowworld.bean.HelloWorldWithFactoryMethod;
@@ -25,7 +28,11 @@ public class ClassPathXmlApplicationContextCheck
 		HelloWorldWithFactoryMethod obj2 =  context.getBean("helloBeanFactory",HelloWorldWithFactoryMethod.class);
 		obj2.printHello();
 		
-		HelloWorldWithFactoryBeanFactoryMethod obj3 =  context.getBean("helloBeanFactory",HelloWorldWithFactoryBeanFactoryMethod.class);
-		obj2.printHello();
+		HelloWorldWithFactoryBeanFactoryMethod obj3 =  context.getBean("helloBeanMethodFactory",HelloWorldWithFactoryBeanFactoryMethod.class);
+		obj3.printHello();
+		
+		SimpleBookLister lister = context.getBean("bookLister", SimpleBookLister.class);
+		Map<String, Object> searchAttr=null;
+		lister.findBook(searchAttr);
     }
 }

@@ -7,6 +7,7 @@
  	<!-- use one or more occurrences of the <import/> element to load bean definitions from another file or files -->
 	<!-- hello/helloBeans.xml has specific beans defined which are imported using <import/>  --> 	
  	<import resource="hello/helloBeans.xml"/>
+ 	<import resource="constructor/constructorBeans.xml"/>
 
  	
  	<!-- Specifying all aliases where the bean is actually defined is not always adequate, however. 

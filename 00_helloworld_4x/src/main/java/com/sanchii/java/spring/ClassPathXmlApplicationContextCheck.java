@@ -5,7 +5,8 @@ import java.util.Map;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.sanchii.java.spring.dependency.injection.bean.SimpleBookLister;
+import com.sanchii.java.spring.dependency.injection.bean.SimpleBookListerConstructorExample;
+import com.sanchii.java.spring.dependency.injection.bean.SimpleBookListerSetterExample;
 import com.sanchii.java.spring.hellowworld.bean.HelloWorld;
 import com.sanchii.java.spring.hellowworld.bean.HelloWorldWithFactoryBeanFactoryMethod;
 import com.sanchii.java.spring.hellowworld.bean.HelloWorldWithFactoryMethod;
@@ -31,8 +32,11 @@ public class ClassPathXmlApplicationContextCheck
 		HelloWorldWithFactoryBeanFactoryMethod obj3 =  context.getBean("helloBeanMethodFactory",HelloWorldWithFactoryBeanFactoryMethod.class);
 		obj3.printHello();
 		
-		SimpleBookLister lister = context.getBean("bookLister", SimpleBookLister.class);
+		SimpleBookListerConstructorExample lister = context.getBean("bookLister", SimpleBookListerConstructorExample.class);
 		Map<String, Object> searchAttr=null;
 		lister.findBook(searchAttr);
+		
+		SimpleBookListerSetterExample lister1 = context.getBean("bookListerSetter", SimpleBookListerSetterExample.class);
+		lister1.findBook(searchAttr);
     }
 }

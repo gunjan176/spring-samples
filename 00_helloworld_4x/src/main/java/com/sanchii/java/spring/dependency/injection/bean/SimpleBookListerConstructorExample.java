@@ -13,13 +13,15 @@ import com.sanchii.java.spring.dependency.injection.BookFinder;
  * @author khamgaonkarg
  *
  */
-public class SimpleBookLister {
+public class SimpleBookListerConstructorExample {
 
     // the BookFinder has a dependency on a MovieFinder
     private BookFinder bookFinder;
 
     // a constructor so that the Spring container can inject a bookFinder
-    public SimpleBookLister(BookFinder bookFinder) {
+    public SimpleBookListerConstructorExample(BookFinder bookFinder ) {
+    	
+    	System.out.println("Calling the Constructor to set bookFinder to the following value : " + bookFinder);
         this.bookFinder = bookFinder;
     }
 

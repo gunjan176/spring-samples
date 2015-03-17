@@ -13,6 +13,8 @@ import com.sanchii.java.spring.dependency.injection.BookFinder;
  */
 public class BookFinderBean implements BookFinder {
 
+	
+	
 	/* (non-Javadoc)
 	 * @see com.sanchii.java.spring.dependency.injection.BookFinder#findBook(java.util.Map)
 	 */
